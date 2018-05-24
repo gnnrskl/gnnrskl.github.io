@@ -89,9 +89,6 @@ io.on('connection', function(socket) {
                 player.velY = -player.velY
             }
             
-            if (players[socket.id].x == players[socket.id].x && players[socket.id].y == players[socket.id].y && players != players) {
-                console.log('oof')
-            }
         }
         player.velY *= player.friction;
         player.y += player.velY;
