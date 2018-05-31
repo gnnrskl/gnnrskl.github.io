@@ -109,6 +109,7 @@ io.on('connection', function(socket) {
     console.log('client connected')
     connectedCount++;
     clients[socket.id] = socket;
+    socket.emit('color')
     socket.on('disconnect', function() {
         console.log('client disconnected')
         connectedCount--;
