@@ -162,7 +162,6 @@ socket.on('state', function(players) {
     
   for (var id in players) {
     var player = players[id];
-    ctx.fillStyle = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     ctx.beginPath();
     ctx.arc(player.x, player.y, 20, 0, 2 * Math.PI);
     ctx.fill()
