@@ -145,9 +145,7 @@ movementemit()
 var connectedcount = 0;
 
 socket.emit('new player');
-socket.on('connection' function() {
-    connectedcount++;
-})
+
 var canvas = document.getElementById('mainCanvas');
 var ctx = canvas.getContext('2d');
 
