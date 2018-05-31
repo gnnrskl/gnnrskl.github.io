@@ -40,7 +40,7 @@ io.on('connection', function(socket) {
             width: 10,
             height: 10,
             id: getRandomInt(9999),
-            color: '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+            color: '#'+(Math.random()*0xFFFFFF<<0).toString(16)
         };
     });
     
