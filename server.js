@@ -28,6 +28,7 @@ var clients = {}
 
 var players = {};
 io.on('connection', function(socket) {
+    socket.emit('color')
     socket.on('new player', function() {
         players[socket.id] = {
             x: 500,
@@ -109,7 +110,6 @@ io.on('connection', function(socket) {
     console.log('client connected')
     connectedCount++;
     clients[socket.id] = socket;
-    socket.emit('color')
     socket.on('disconnect', function() {
         console.log('client disconnected')
         connectedCount--;
