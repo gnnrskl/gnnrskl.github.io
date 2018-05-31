@@ -160,8 +160,8 @@ ctx.fillStyle = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 socket.on('state', function(players) {
   ctx.clearRect(0, 0, w, h);
   for (var id in players) {
-    ctx.fillStyle = player.color;
     var player = players[id];
+    ctx.fillStyle = player.color;
     ctx.beginPath();
     ctx.arc(player.x, player.y, 20, 0, 2 * Math.PI);
     ctx.fill()
