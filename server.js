@@ -39,7 +39,8 @@ io.on('connection', function(socket) {
             keys: [],
             width: 10,
             height: 10,
-            id: getRandomInt(9999)
+            id: getRandomInt(9999),
+            color: 'black'
         };
     });
     
