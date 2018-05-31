@@ -161,10 +161,10 @@ socket.on('state', function(players) {
   ctx.clearRect(0, 0, w, h);
   for (var id in players) {
     var player = players[id];
-    ctx.fillStyle = player.color;
     ctx.beginPath();
     ctx.arc(player.x, player.y, 20, 0, 2 * Math.PI);
     ctx.fill()
+    ctx.fillStyle = player.color;
   }
 });
 
