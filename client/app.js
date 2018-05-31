@@ -162,7 +162,7 @@ ctx.fillStyle = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 socket.on('state', function(players) {
     
   ctx.clearRect(0, 0, w, h);
-  ctx.fillStyle = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+  ctx.fillStyle = 'black'
   for (var id in players) {
     var player = players[id];
     ctx.beginPath();
