@@ -142,7 +142,7 @@ function movementemit() {
 }
 movementemit()
 
-var connectedcount;
+var connectedcount = 0;
 
 socket.emit('new player');
 socket.on('connection' function() {
