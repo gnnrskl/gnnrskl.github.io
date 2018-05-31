@@ -158,7 +158,7 @@ ctx.fillStyle = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 socket.on('state', function(players) {
     
   ctx.clearRect(0, 0, w, h);
-  ctx.fillStyle = 'black'
+  ctx.fillStyle = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
   socket.on('color', function() {
       ctx.fillStyle = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
   });
