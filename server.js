@@ -28,7 +28,6 @@ var clients = {}
 
 var players = {};
 io.on('connection', function(socket) {
-    socket.emit('color')
     socket.on('new player', function() {
         players[socket.id] = {
             x: 500,
