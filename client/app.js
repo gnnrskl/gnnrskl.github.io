@@ -166,7 +166,7 @@ socket.on('state', function(players) {
     ctx.arc(player.x, player.y, 20, 0, 2 * Math.PI);
     ctx.fill()
     ctx.font = '12px Comic Sans MS'
-    ctx.fillText(player.name, player.x, player.y+5)
+    ctx.fillText(player.name, player.x, player.y-15)
     ctx.fillStyle = player.color;
   }
 });
