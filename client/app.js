@@ -161,6 +161,7 @@ socket.on('state', function(players) {
   ctx.clearRect(0, 0, w, h);
   for (var id in players) {
     var player = players[id];
+    player.name = document.getElementById('nameInput').value;
     ctx.beginPath();
     ctx.arc(player.x, player.y, 20, 0, 2 * Math.PI);
     ctx.fill()
